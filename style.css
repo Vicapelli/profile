@@ -1,0 +1,102 @@
+#avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;;
+}
+
+h1 {
+    color: #30475e;
+}
+
+p {
+    color: #30475e;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 20px;;
+}
+
+h2 {
+    color: #30475e;
+}
+
+a {
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.btn-blue {
+    font-size: 15px;
+    background-color: #30475e;
+    color: white;
+    border-radius: 2px;
+    padding: 10px 5px;
+}
+
+.btn-blue:hover {
+    background-color: blue;
+}
+
+a :hover {
+    color: black;
+}
+
+.container {
+    margin: 40px auto;
+    width: 700px;
+}
+
+
+.card {
+    background-color: #ececec;
+    padding: 40px;
+    box-shadow: 0px 10px 30px #30475e;
+    border-radius: 4px;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.list-inline {
+    padding: 0;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+.list-inline > li {
+    display: inline;
+    text-decoration: none;
+}
+
+.list-inline a {
+    color: #30475e;
+}
+
+@media (max-width: 960px) {
+    /* For a screen < 960px, this CSS will be read */
+    .container {
+      width: 700px;
+    }
+  }
+  @media (max-width: 720px) {
+    /* For a screen < 720px, this CSS will be read */
+    .container {
+      width: 500px;
+    }
+  }
+  @media (max-width: 540px) {
+    /* For a screen < 540px, this CSS will be read */
+    .container {
+      width: 300px;
+    }
+  }
