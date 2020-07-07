@@ -1,39 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>My profile</title>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Victor Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     </head>
     <body>
-      <div class="container">
-      <div class="card">
-        <h1>Hello, I'm Victor ! 😜</h1>
-        <img src="images/profile-picture.jpg" alt="profile picture"  id="avatar">
-        <p>I'm a Le Wagon's student learning web development. I love playing soccer ⚽ and eletronic games 🎮!</p>
-        <a href="#" class="btn-blue">More about me</a>
-      </div>
-      <div class="card">
-        <h2>Follow me</h2>
-        <ul class="list-inline">
-            <li>
-              <a href="#">
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-          </ul>
-      </div>
-    </div>
+        <header>
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Victor Capelli</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">full stack dev</p>
+            <img src="images/profile.jpg" alt="a picture of Victor Capelli smiling" class="intro__img">
+        </section>
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Developer based out of Sao Paulo</p>
+           <div class="about-me__body">
+               <p>I'm a 22 years old guy, learning step by step how to code since I was 19. I really got into software development after completing the Le Wagon coding bootcamp. Since then, building web apps has been a big passion of mine.
+
+               I have already worked with Front-End and Back-End projects.
+
+               My current tech stack choice for web development is Ruby on Rails with JS, currently learning ReactJS and more advanced CSS skills.
+
+               Besides coding, I enjoy e-sports, travelling, soccer and movies..</p>
+           </div>
+           
+           <img src="images/profile-picture.jpg" alt="Victor at Sydney" class="about-me__img">
+        </section>
+        
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+            
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="https://www.unaconsulta.com.br" class="portfolio__item" target="_blank">
+                    <img src="images/unaconsulta.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 02 -->
+                <a href="https://geek-inventory.herokuapp.com/" class="portfolio__item2" target="_blank">
+                    <img src="images/geek.jpg" alt="" class="portfolio__img">
+                </a>
+                
+            </div>
+        </section>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:victorbustocapelli@hotmail.com" class="footer__link">victorbustocapelli@hotmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.instagram.com/victorcapeli/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/victor-c-b1a716100/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/Vicapelli" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
     </body>
 </html>
